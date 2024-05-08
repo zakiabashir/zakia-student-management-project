@@ -2,7 +2,7 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(chalk.blue(`\n\t\t\t<====================================================>`));
-console.log(chalk.bold.italic.underline.green("\n\t\t\t >>--*** WELCOME TO THE STUDENT MANAGEMENT SYSTEM ***--<<\n"));
+console.log(chalk.bold.underline.green("\n\t\t\t >>--*** WELCOME TO THE STUDENT MANAGEMENT SYSTEM ***--<<\n"));
 console.log(chalk.blue(`\n\t\t\t<====================================================>`));
 class student {
     id;
@@ -40,8 +40,8 @@ do {
                 basedId++;
                 studentId = "STID" + basedId;
                 console.log(chalk.blue(`\n\t\t\t<====================================================>`));
-                console.log(chalk.bold.italic.red(`\n\t\t\t Welcome ${trimedstudentName}!`));
-                console.log(chalk.bold.italic.red("\n\t\t\t Your account has been created\n"));
+                console.log(chalk.bold.italic.red(`\n\t\t\t\t Welcome ${trimedstudentName}!`));
+                console.log(chalk.bold.italic.red("\n\t\t\t\t Your account has been created\n"));
                 console.log(chalk.blue(`\n\t\t\t<====================================================>`));
                 let course = await inquirer.prompt({
                     name: "answer3",
@@ -116,5 +116,9 @@ do {
     });
     if (userConfirm.answer6 === false) {
         continueEnrollement = false;
+        console.log(chalk.green(`\t<===========================================================================>`) + chalk.yellow(`\t<===============>`));
+        console.log(chalk.yellow(`\t THANKS FOR USING THIS CLI-STUDENT-MANAGEMENT-PROJECT PROGRAM CREATOR BY: =>`) + chalk.blue(`\t "ZAKIA BASHIR"`));
+        console.log(chalk.green(`\t<==========================================================================>`) + chalk.yellow(`\t<===============>`));
+        break;
     }
 } while (continueEnrollement);

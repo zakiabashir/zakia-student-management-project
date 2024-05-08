@@ -6,7 +6,7 @@ import chalk from "chalk";
 console.log(chalk.blue
       (`\n\t\t\t<====================================================>`)
 );
-console.log(chalk.bold.italic.underline.green("\n\t\t\t >>--*** WELCOME TO THE STUDENT MANAGEMENT SYSTEM ***--<<\n"));
+console.log(chalk.bold.underline.green("\n\t\t\t >>--*** WELCOME TO THE STUDENT MANAGEMENT SYSTEM ***--<<\n"));
 console.log(chalk.blue(`\n\t\t\t<====================================================>`));
 class student {
     id: string;
@@ -146,6 +146,23 @@ do {
     })
     if (userConfirm.answer6 === false) {
         continueEnrollement = false
-    }
-
-} while (continueEnrollement)
+        
+          console.log(
+            chalk.green(
+              `\t<===========================================================================>`
+            ) + chalk.yellow(`\t<===============>`)
+          );
+          console.log(
+            chalk.yellow(
+              `\t THANKS FOR USING THIS CLI-STUDENT-MANAGEMENT-PROJECT PROGRAM CREATOR BY: =>`
+            ) + chalk.blue(`\t "ZAKIA BASHIR"`)
+          );
+          console.log(
+            chalk.green(
+              `\t<==========================================================================>`
+            ) + chalk.yellow(`\t<===============>`)
+          );
+          break;
+    
+        }
+} while (continueEnrollement);
