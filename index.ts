@@ -3,6 +3,12 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
+console.log(chalk.blue
+    (`\n\t\t\t<====================================================>`)
+  );
+  console.log(chalk.bold.underline.green("\n\t\t\t >>--*** WELCOME TO THE STUDENT MANAGEMENT SYSTEM ***--<<\n"));
+  console.log(chalk.blue(`\n\t\t\t<====================================================>`));
+  
 interface Student {
     [key: string]: {
       name: string;
@@ -15,11 +21,6 @@ interface Student {
   
   let studentData: Student = {};
   
-  console.log(chalk.blue
-    (`\n\t\t\t<====================================================>`)
-  );
-  console.log(chalk.bold.underline.green("\n\t\t\t >>--*** WELCOME TO THE STUDENT MANAGEMENT SYSTEM ***--<<\n"));
-  console.log(chalk.blue(`\n\t\t\t<====================================================>`));
   
   let loop = true;
   while (loop) {
